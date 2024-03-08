@@ -12,7 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efefef;
+
+  background-color: rgba(61, 46, 232, 0.83);
 }
 .slide-container {
   max-width: 1120px;
