@@ -169,7 +169,7 @@ a {
   font-weight: bolder;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: initial;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .intro_first_part {
@@ -632,5 +632,32 @@ button:hover {
 form p {
   text-align: left;
 }
+
+
+  .footer {
+    height: 85vh;
+    color: #aeafc4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1e1e2c;
+  }
+
+  .contact-info, .developer-info {
+    padding: 10px;
+  }
+
+  .contact-info p, .developer-info p {
+    margin: 0;
+  }
+
+  .social_media_icons{
+    height: 10vh;
+    /* border: 2px solid white; */
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+
 
 /* bact to top btn css */
