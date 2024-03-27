@@ -1,10 +1,5 @@
 /*whatsapp floating icon css  */
 
-
-
-
-
-
 a {
   text-decoration: none;
 }
@@ -52,10 +47,6 @@ a {
   text-decoration: none !important;
   transition: all 300ms ease-in-out;
 }
-
-
-
-
 
 .text_icon {
   margin-top: 8px;
@@ -203,8 +194,6 @@ a {
   border-radius: 10%;
   margin-top: 2%;
 }
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
@@ -373,132 +362,60 @@ input[type="radio"] {
 /* Courses CSS */
 
 #Courses {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: linear-gradient(90deg, #be8cef 0%, rgba(61, 46, 232, 0.83) 100%);
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
+}
+
+.courses {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+ 
+  color: white;
+  width: calc(33.33% - 20px);
+  /* Adjust the width and margin as needed for spacing */
+  margin: 10px;
+  /* For equal spacing between the boxes */
+  height: 150px; /* Set height as needed */
+  background-color: #1e1e2c;
+  border-radius: 10px;
+  transition: 0.3s ease-in ;
   align-items: center;
-  justify-content: center;
-  font-family: "El Messiri", sans-serif;
+  padding-top: 2%;
+
+ 
+  
+  /* Other styling properties */
 }
 
-.Courses_container {
-  width: 1000px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .Courses_header {
-    margin: 0 auto;
-    text-align: center;
-    h1 {
-      color: #fff;
-      font-weight: 900;
-    }
-    p {
-      color: #fff;
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+.courses:hover{
+  background-color: rgb(17, 76, 227)
+
+ 
+}
+.courses_button{
+  width: max-content;
+  height: 8vh;
+  border-radius: 0px;
+  background-color: #1e1e2c;
+  margin-bottom: 2%;
+  transition: 0.3s linear;
 }
 
-/* courses cards css */
+.courses_button:hover{
+  background-color: rgb(17, 76, 227)
 
-.Courses_card {
-  position: relative;
-  margin-left: 9px;
-  margin-right: 9px;
-  .face {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    transition: 0.5s;
-    border-radius: 12px;
-    &.face1 {
-      position: relative;
-      background: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1;
-      transform: translateY(100px);
-    }
-  }
-  &:hover .face.face1 {
-    transform: translateY(0);
-    background-image: linear-gradient(
-      to left bottom,
-      #8c00dc,
-      #c600ba,
-      #e80096,
-      #f90074,
-      #ff0057
-    );
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .face.face1 .content {
-    opacity: 0.8;
-    transition: 0.5s;
-  }
-  &:hover .face.face1 .content {
-    opacity: 1;
-  }
-  .face {
-    &.face1 .content {
-      img {
-        max-width: 60px;
-      }
-      h3 {
-        margin: 10px 0 0;
-        padding: 0;
-        color: #fff;
-        text-align: center;
-        font-size: 1.5em;
-      }
-    }
-    &.face2 {
-      position: relative;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      box-sizing: border-box;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-      transform: translateY(-100px);
-    }
-  }
-  &:hover .face.face2 {
-    transform: translateY(0);
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .face.face2 {
-    p {
-      margin: 0;
-      padding: 0;
-    }
-    a {
-      margin: 15px 0 0;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 900;
-      color: #333;
-      padding: 5px;
-      border: 1px solid #333;
-      &:hover {
-        background-color: #333;
-        color: #fff;
-      }
-    }
-  }
+ 
 }
+
+
+
+
+
+
 
 /* Contact form css */
 
@@ -633,31 +550,33 @@ form p {
   text-align: left;
 }
 
+.footer {
+  height: 85vh;
+  color: #aeafc4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1e1e2c;
+}
 
-  .footer {
-    height: 85vh;
-    color: #aeafc4;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #1e1e2c;
-  }
+.contact-info,
+.developer-info {
+  padding: 10px;
+}
 
-  .contact-info, .developer-info {
-    padding: 10px;
-  }
+.contact-info p,
+.developer-info p {
+  margin: 0;
+}
 
-  .contact-info p, .developer-info p {
-    margin: 0;
-  }
-
-  .social_media_icons{
-    height: 10vh;
-    /* border: 2px solid white; */
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-  }
-
+.social_media_icons {
+  height: 10vh;
+  /* border: 2px solid white; */
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
 
 /* bact to top btn css */
+
+/* Counter css */
